@@ -42,7 +42,7 @@ int SumOfArray(int input[], int n) {
     return SumOfArray(input, n-1) + input[n-1];
 }
 
-int main(){
+int main() {
     int n;
     cin >> n;
 

@@ -43,41 +43,36 @@ Constraints:
 1 <= ‘n’ <= 10^9
 */
 
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int countDigits(int n) {
+int CountDigits(int n) {
     if(n == 0) {
         return 0;
     }
 
-    return countDigits(n/10) + 1;
+    return CountDigits(n/10) + 1;
 }
 
 class Runner {
     int N;
 
     public:
-        void takeInput()
-        {
+        void takeInput() {
             cin >> N;
         }
 
-        void execute()
-        {
-            int ans = countDigits(N);
+        void execute() {
+            int ans = CountDigits(N);
         }
 
-        void executeAndPrintOutput()
-        {
-
-            int ans = countDigits(N);
+        void executeAndPrintOutput() {
+            int ans = CountDigits(N);
             cout << ans << endl;
         }
 };
 
-int main()
-{
+int main() {
     Runner runner;
     runner.takeInput();
     runner.executeAndPrintOutput();

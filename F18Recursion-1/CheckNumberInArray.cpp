@@ -50,7 +50,7 @@ bool CheckNumber(int input[], int n, int x) {
     return CheckNumber(input, n-1, x);
 }
 
-int main(){
+int main() {
     int n;
     cin >> n;
 

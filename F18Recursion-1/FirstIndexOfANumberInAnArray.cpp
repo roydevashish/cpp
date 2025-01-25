@@ -47,7 +47,7 @@ int FirstIndex(int input[], int n, int x) {
     return FirstIndexRecursive(input, n, x, 0);
 }
 
-int main(){
+int main() {
     int n;
     cin >> n;
 

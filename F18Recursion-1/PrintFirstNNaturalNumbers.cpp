@@ -39,7 +39,7 @@ void PrintFirstNNaturalNumbers(int n) {
     return;
 }
 
-int main(){
+int main() {
     int n;
     cin >> n;
 

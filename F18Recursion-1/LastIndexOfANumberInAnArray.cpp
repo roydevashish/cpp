@@ -51,7 +51,7 @@ int LastIndex(int input[], int n, int x) {
     return LastIndexRecursive(input, n, x, 0);
 }
 
-int main(){
+int main() {
     int n;
     cin >> n;
 
